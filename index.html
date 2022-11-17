@@ -6,9 +6,95 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sono:wght@200;300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <header>
+        <h1 id="logo">Build a Chart</h1>
+        <div id="spacer"></div>
+        <img src="https://th.bing.com/th/id/R.451b296c6e4b2bc2a3fee4772dc2416a?rik=m3EtOk%2fROhmCtQ&riu=http%3a%2f%2fcdn.onlinewebfonts.com%2fsvg%2fimg_487738.png&ehk=x8FkbDwe%2fIlAcHNZbre4X5ZP6227mPjIf0gEBuM%2f05w%3d&risl=&pid=ImgRaw&r=0" alt="burgermenu">
+    </header>
+
+    <section class="menuCont">
+                <h2 id="submit">Submit</h2>
+                <h2 id="reset">Reset</h2>
+    </section>
+
+    <main>
+        <div id="Accor">
+            <article class="optButt">Chart Type</article>
+            <article class="optCont">
+                <div class="optType">
+                    <input type="radio" value="bar" id="bar" name="type" style="margin-right: 5px;"><label for="bar">Bar</label>
+                    <div class="space"></div>
+                    <input type="radio" value="pie" id="pie"  name="type" style="margin-right: 5px;"><label for="pie">Pie</label>
+                </div>
+
+                <section class="bar">
+                    <h3>Bar Direction</h3>
+                    <div class="optType">
+                        <input type="radio" value="bvg" id="bvg" name="direction" style="margin-right: 5px;"><label for="bvg">Vertical Group</label>
+                        <div class="space"></div>
+                        <input type="radio" value="bhg" id="bhg" name="direction" style="margin-right: 5px;"><label for="bhg">Horizontal Group</label>
+                        <div class="space"></div>
+                        <input type="radio" value="bvs" id="bvs" name="direction" style="margin-right: 5px;"><label for="bvs">Vertical Stack</label>
+                        <div class="space"></div>
+                        <input type="radio" value="bhs" id="bhs" name="direction" style="margin-right: 5px;"><label for="bhs">Horizontal Stack</label>
+                    </div>
+
+                    <h3>Bar Color</h3>
+                    <div class="optType">
+                        <label for="color">Pick your color</label><input type="color" id="color" name="color" style="margin-right: 5px;">
+                    </div>
+                </section>
+
+
+                <section class="pie">
+                    <h3>Pie Style</h3>
+                    <div class="optType">
+                        <input type="radio" value="p3" id="pi" name="direction" style="margin-right: 5px;"><label for="pi">Basic Pie</label>
+                        <div class="space"></div>
+                        <input type="radio" value="pd" id="dnut" name="direction" style="margin-right: 5px;"><label for="dnut">Doughnut</label>
+                    </div>
+
+                    <h3>Pie Color</h3>
+                    <div class="optType">
+                        <label for="color">Pick your color</label><input type="color" id="color" name="color" style="margin-right: 5px;">
+                    </div>
+                </section>
+            </article>
+            <article class="optButt">Chart Items</article>
+            <article class="optCont">
+                <h3>Enter the values of the chart items separated with a comma and without spaces (ex. 10,20,30...)</h3>
+                <input type="text" id="itemNum" class="inputStyle" placeholder="10,20,30...">
+                <h3 class="pie">Enter the names for each pie slice separated with a | (ex. Jan|Feb|Mar...)</h3>
+                <input type="text" class="pie inputStyle" id="pieLabel" placeholder="Jan|Feb|Mar...">
+                <h3 class="doughn">Enter the value to display in the Doughnut hole</h3>
+                <input type="text" class="doughn inputStyle" placeholder="Enter value here...">
+                <h3 class="bar">Enter the names for each bar separated with a | (ex. Jan|Feb|Mar...)</h3>
+                <input type="text" class="bar inputStyle" id="barLabel" placeholder="Jan|Feb|Mar...">
+            </article>
+
+            <article class="optButt">Chart Size</article>
+            <article class="optCont">
+                <div class="optType">
+                    <input type="radio" value="500x200" id="small" name="size" style="margin-right: 5px;"><label for="small">Small</label>
+                    <div class="space"></div>
+                    <input type="radio" value="700x300" id="mid" name="size" style="margin-right: 5px;"><label for="mid">Medium</label>
+                    <div class="space"></div>
+                    <input type="radio" value="900x400" id="large" name="size" style="margin-right: 5px;"><label for="large">Large</label>
+                </div>
+            </article>
+        </div>
+        <picture></picture>
+    </main>
+    <footer></footer>
+
+
+
+
     <script src="app.js"></script>
 </body>
 </html>

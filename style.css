@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    font-family: 'Sono', sans-serif;
+}
+
+main {
+    margin-top: 200px;
+}
+
+.space {
+    flex-grow: 1;
+}
+/*HEADER START*/
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    border: 0px solid lightgray;
+    border-bottom: 1px;
+    box-shadow: 1px 0px 3px gray;
+    letter-spacing: 0.25rem;
+    font-weight: 400;
+    background-color: rgba(255, 255, 255, 0.694);
+}
+
+header > img {
+    height: 2rem;
+}
+/*HEADER END*/
+
+/*MENU START*/
+.menuCont {
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    position: fixed;
+    right: 20px;
+    top: 68px;
+    background-color: rgba(255, 255, 255, 0.425);
+    padding: 5px;
+    border-radius: 10px;
+
+}
+
+#submit, #reset {
+    border-radius: 10px;
+    margin-bottom: 2px;
+    padding: 3px 15px;
+    background-image:radial-gradient(rgb(57, 59, 22), rgba(248, 255, 167, 0.594));
+    color:white;
+    text-shadow: 0.5px 0.5px 1px black;
+    letter-spacing: 0.25rem;
+    font-weight: 400;
+}
+
+#submit:active, #reset:active {
+    opacity: 0.5;
+}
+
+.toggleBurger {
+    display: flex;
+}
+/*MENU END*/
+
+/*ACCORD START*/
+#Accor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.optButt {
+    font-size: 2rem;
+    margin: 0px auto 5px;
+    width: 100%;
+    max-width: 1000px;
+    text-align: center;
+    background-image:radial-gradient(rgb(57, 59, 22), rgba(248, 255, 167, 0.562));
+    color:white;
+    border-radius: 3px;
+    text-shadow: 0.5px 0.5px 1px black;
+    letter-spacing: 0.25rem;
+    font-weight: 400;
+
+}
+
+.optButt:active {
+    opacity: 0.5;
+}
+
+.optCont {
+    margin: -6px auto 5px;
+    width: 100%;
+    max-width: 1000px;
+    display: none;
+    padding: 20px 5% 0px;
+    letter-spacing: 0.05rem;
+    font-size: 1rem;
+}
+
+.optType {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+/*bar start*/
+.bar, .pie, .doughn {
+    display: none;
+}
+
+.toggleOpt {
+    display: block;
+}
+
+.inputStyle {
+    border-radius: 5px;
+    border-color: lightgrey;
+    margin-top: 7px;
+    margin-bottom: 30px;
+    width: 300px;
+    height: 30px;
+}
+/*ACCORD END*/
+
+
+/*CHART START*/
+picture{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    width: 100%;
+    
+}
+
+.img {
+    padding: 5%;
+    max-width: 100%;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+}
+/*CHART END*/
+
+@media screen and (min-width: 800px) {
+    /*MENU START*/
+    /*MENU END*/
+}
+
+
